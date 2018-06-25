@@ -1,0 +1,49 @@
+I.Stitching
+
+1.Inputs: imageA, imageB: OpenCV image type BGRA array(W*H*4) of u8.
+
+
+2.Output: result: OpenCV image type BGRA array(W・*400*4) of u8, W・ =  W*(400/H).
+
+3.Parameters: Matching parameters(0.6 SIFT feature similarity)
+
+4.Methods:
+	a.detechAndDescribe: Find the SIFT features of the two output images.
+	b.matchKeypoints: Compare SIFT features between two images.
+	c.imageWrap&stitching: after finding homography, use Affine Transform to deform, lastly, aline the array coordinate and stich two images together.
+
+
+II.Internet(TCP)
+
+1.Input: 
+	1.result: OpenCV image type BGRA array(W・*400*4) of u8, W・ =  W*(400/H)
+
+2.Output: 
+	1.result: OpenCV image type BGRA array(W・*400*4) of u8, W・ =  W*(400/H)
+
+3.Parameter: 
+	1.IP: socket server ��IP(Next level's RaspberryPi)
+
+4.Method:
+	1.Socket client: Transmit result to next level RaspberryPi via TCP.
+
+
+III.3D View
+
+1.Input:
+	1.result3: OpenCV image type BGRA array(W・*400*4) of u8, W・ =  W*(400/H)
+
+
+2.Outputs:
+	1.Result4(First person view): OpenCV image type BGRA array(W・*400*4) of u8, W・ =  W*(400/H)
+
+	2.Result5(Third person view): OpenCV image type BGRA array(W・*400*4) of u8, W・ =  W*(400/H)
+
+3.Parameter
+	1.View angle: View angle(from the horizon) 5 levels: 90 45 0 -45 -90 degrees
+
+4.Method
+	1.3D model transform: use 3D surface coordinates to transform input into 3D view.
+
+
+

@@ -1,0 +1,49 @@
+I.System Requirements:
+
+1.Stitch four images from four different camera together.
+
+2.Convert the stitched image to 3D, using first person view and third person view.
+
+3.Implement work division to perform operation.
+
+
+II.Efficacy Requirements:
+
+1.FPS>=1
+
+2.Processing speed, parallel data processing withing the limits of RaspberryPi.
+
+
+III.External Requirements:
+
+1.Output: 1 screen
+
+2.Input: 4 webcams
+
+3.Processing unit: 5 RaspberryPi
+
+
+IV-1.Internal Requirements-Structure:
+
+See Figure 1.
+
+IV-2.Internal Requirements-3D Structure:
+
+Construct a Distortion model -> Apply image to Distortion model.
+
+IV-3.Internal Requirements-Work division Structure:
+  
+
+See Figure 2.
+
+V.Limits:
+
+1.Hardware: RaspberryPi 3
+
+2.Programing Language: Python
+
+3.Operating System: Linux
+
+4.Algorithm Library: OpenCV
+
+5.Internet: WAN
