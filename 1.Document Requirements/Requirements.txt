@@ -2,9 +2,7 @@ I.System Requirements:
 
 1.Stitch four images from four different camera together.
 
-2.Convert the stitched image to 3D, using first person view and third person view.
-
-3.Implement work division to perform operation.
+2.Implement work division to perform operation.
 
 
 II.Efficacy Requirements:
@@ -21,6 +19,8 @@ III.External Requirements:
 2.Input: 4 webcams
 
 3.Processing unit: 5 RaspberryPi
+
+4.Communication unit: 1 AP
 
 
 IV-1.Internal Requirements-Structure:

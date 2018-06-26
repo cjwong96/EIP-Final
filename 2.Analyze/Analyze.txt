@@ -25,7 +25,7 @@ II.Internet(TCP)
 	1.IP: socket server ªºIP(Next level's RaspberryPi)
 
 4.Method:
-	1.Socket client: Transmit result to next level RaspberryPi via TCP.
+	1.Socket client: Transmit result to next level RaspberryPi via TCP + recvdall getres sendres
 
 
 III.3D View
