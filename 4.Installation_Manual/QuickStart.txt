@@ -1,0 +1,41 @@
+Things you will need:
+
+1.RaspberryPi3(with Raspbian Stretch) x 5
+
+2.USB cable x 5
+
+3.Power adapter x 5
+
+4.Webcam x 5(it's better to have 5 same webcams)
+
+5.WAN AP x 1
+
+6.Keyboard x 1
+
+7.Mouse x 1
+
+8.PC x 1(for testing purposes)
+
+First you need to have the right version of opencv on your RaspberryPi.
+
+You can follow this tutorial to install the verison of opencv that we used:
+https://www.pyimagesearch.com/2017/09/04/raspbian-stretch-install-opencv-3-python-on-your-raspberry-pi/
+
+Then you need to setup the cameras, just put them in four different positions, we will adjust them later.
+
+It's time to setup you RaspberryPis, download the source codes from github, four of the RaspberryPis will be used for the camera input, the last one will be the server.
+
+Line the RaspberryPis up from left to right, the one on the furthest left side will be the server, connect one camera to the other four RaspberryPis.
+
+You have to connect all the RaspberryPis to the same Wifi, so go ahead and do that.
+
+When you finish, it's time to test out the codes.
+
+First, check the version of python thats installed on your RaspberryPi, open Terminal and type "python" -> "import cv2" -> "cv2.__version__", it shoud either say 3.3.0 or 2.7.0.
+
+Next, find the source code you need for your RaspberryPi, in the EIP folder, you will see six folders, the first one(pyimagesearch) is the stitching libiary, then you will see RSPnoX_YY(X varies on the RaspberryPi
+number, YY is the position of the RaspberryPis) RR means first from the right, RL means second from the right, LL means first on the left, LR means second from the left, the on with no abbreviation is for the server. 
+
+Then connect all four cameras to the RaspberryPis, then open terminal move into RSPnoX_YY, type "python rspXX.py(depending on whats inside the folder, it's either 13 or 24, the server one is rsp5)" and remember, you have to run 13 first.
+
+After that all you have to do is adjust the cameras, you can hit w on the RaspberryPi with rsp24.py the recalculate the matrix.(under the reslut window)
