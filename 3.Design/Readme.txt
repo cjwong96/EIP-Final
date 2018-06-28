@@ -1,2 +1,3 @@
+design.txt: the design of our system.
 
-design
+Design.html: Links of our source code included in the Html.
