@@ -4,11 +4,10 @@ Issue 1. During the stitching process, if there are no valid SIFT features, it w
 	 from crashing.
 
 Issue 2: The position and angle of the cameras must be placed exactly in the place/angle, missplaced cameras can and will affect the outcome of stitching.
-    R 2.
+    R 2: The cameras has to be on the same plane, and they need to have at lease 50% of the capture images overlaped.
 
 Issue 3: Count'd from issue 2, if the cameras are and positioned correctly, if will cause the right side of the image to move dramatically, this devesting
 	 because there is no way to see the image clearly.
      R3: We change the code to lock the matrix, this will stop the right side of the image from moving, but if the cameras are moved, a recacluation of the 
 	 matrix is needed.
 
-Issue 4:  
