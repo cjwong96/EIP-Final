@@ -11,3 +11,5 @@
 6.Source_Code: Source code for each RaspberryPi.
 
 7.Wiki: Issues and demo video.
+
+EIP: a brief PowerPoint of our project.

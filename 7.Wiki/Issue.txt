@@ -3,7 +3,7 @@ Issue 1. During the stitching process, if there are no valid SIFT features, it w
     R 1: We added a try and catch to our code, if there are no features found, then the function will return a black screen, preventing the program 
 	 from crashing.
 
-Issue 2: The position and angle of the cameras must be placed exactly in the place/angle, missplaced cameras can and will affect the outcome of stitching.
+Issue 2: The position and angle of the cameras must be placed exactly in the place/angle, misplaced cameras can and will affect the outcome of stitching.
     R 2: The cameras has to be on the same plane, and they need to have at lease 50% of the capture images overlaped.
 
 Issue 3: Count'd from issue 2, if the cameras are and positioned correctly, if will cause the right side of the image to move dramatically, this devesting

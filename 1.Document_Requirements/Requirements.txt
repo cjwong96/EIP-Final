@@ -1,4 +1,4 @@
-I.Function Requirements:
+I.Functional Requirements:
 
 1.Stitch four images from four different camera together.
 
